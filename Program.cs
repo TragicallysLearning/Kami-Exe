@@ -31,8 +31,8 @@ namespace Console_App_Test_1
 
             Console.WriteLine($"//Welcome To The First Console App \"Booter\" My Homie G Gangsta Slamma Dawg\r\n//Version - 1.0");
 
-            Console.Write("\rUsername\x1b[0;37m: " + Environment.UserName + "\r\n");
-            Red("\rPassword\x1b[0;37m: **********\r\n");
+            Console.Write("\rUsername: " + Environment.UserName + "\r\n");
+            Red("\rPassword: **********\r\n");
             Console.Write("\r\n");
             Console.Write("\r\n");
             Red("                     ██╗  ██╗ █████╗ ███╗   ███╗██╗                \r\n");
