@@ -11,23 +11,37 @@ namespace Console_App_Test_1
     {
         static void Main(string[] args)
         {
+
+            static void White(string message)
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.Write(message);
+                Console.ResetColor();
+            }
+            static void Red(string message)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write(message);
+                Console.ResetColor();
+            }
+
             Console.Title = $"Logged In As - {Environment.UserName} | Spoofed Servers - 362 | API Count - 53";
 
             Console.ForegroundColor = ConsoleColor.Red;
 
             Console.WriteLine($"//Welcome To The First Console App \"Booter\" My Homie G Gangsta Slamma Dawg\r\n//Version - 1.0");
 
-            Console.Write("\r\x1b[0;31mUsername\x1b[0;37m: " + Environment.UserName + "\r\n");
-            Console.Write("\r\x1b[0;31mPassword\x1b[0;37m: **********\r\n");
+            Console.Write("\rUsername\x1b[0;37m: " + Environment.UserName + "\r\n");
+            Red("\rPassword\x1b[0;37m: **********\r\n");
             Console.Write("\r\n");
             Console.Write("\r\n");
-            Console.Write("                     ██╗  ██╗ █████╗ ███╗   ███╗██╗                \r\n");
+            Red("                     ██╗  ██╗ █████╗ ███╗   ███╗██╗                \r\n");
             Console.Write("                     ██║ ██╔╝██╔══██╗████╗ ████║██║                \r\n");
-            Console.Write("                     █████╔╝ ███████║██╔████╔██║██║                \r\n");
+            Red("                     █████╔╝ ███████║██╔████╔██║██║                \r\n");
             Console.Write("                     ██╔═██╗ ██╔══██║██║╚██╔╝██║██║                \r\n");
-            Console.Write("                     ██║  ██╗██║  ██║██║ ╚═╝ ██║██║                \r\n");
+            Red("                     ██║  ██╗██║  ██║██║ ╚═╝ ██║██║                \r\n");
             Console.Write("                     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝                \r\n");
-            Console.Write("                    Type help for a list of commands!            \r\n");
+            Red("                    Type help for a list of commands!            \r\n");
             Console.Write("\r\n");
 
             do
@@ -44,21 +58,21 @@ namespace Console_App_Test_1
                 if (cmd.Equals("attack", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.Write("\r\n ╔═════╦═══════════════════╦══════════════════════════════════════════════════╦═══════════════╦═════╗\r\n");
-                    Console.Write(" ║ UwU ║     Methods       ║       With Examples, Description & Methods       ║  By Surtains. ║ UwU ║\r\n");
+                    Red(" ║ UwU ║     Methods       ║       With Examples, Description & Methods       ║  By Surtains. ║ UwU ║\r\n");
                     Console.Write(" ╠═════╩════╦══════════════╩════════════════╦═════════════════════════════════╩═══════════════╩═════╣\r\n");
-                    Console.Write(" ║ xmas     ║ xmas 1.1.1.1 5 dport=53       ║ XMAS - Basic Mix-Xmas Flood To Target                 ║\r\n");
+                    Red(" ║ xmas     ║ xmas 1.1.1.1 5 dport=53       ║ XMAS - Basic Mix-Xmas Flood To Target                 ║\r\n");
                     Console.Write(" ║ ack      ║ ack 1.1.1.1 5 dport=20        ║ ACK - ACK Flood To Target                             ║\r\n");
-                    Console.Write(" ║ greip    ║ greip 1.1.1.1 5 dport=PORT    ║ GREIP - GRE IP Flood To Targets                       ║\r\n");
+                    Red(" ║ greip    ║ greip 1.1.1.1 5 dport=PORT    ║ GREIP - GRE IP Flood To Targets                       ║\r\n");
                     Console.Write(" ║ dns      ║ dns 1.1.1.1 5 dport=PORT      ║ DNS - DNS Resolver Flood Using The Targets Domain     ║\r\n");
-                    Console.Write(" ║ syn      ║ syn 1.1.1.1 5 dport=PORT      ║ SYN - SYN Flood To Target                             ║\r\n");
+                    Red(" ║ syn      ║ syn 1.1.1.1 5 dport=PORT      ║ SYN - SYN Flood To Target                             ║\r\n");
                     Console.Write(" ║ stomp    ║ stom 1.1.1.1 5 dport=PORT     ║ STOMP - STOMP Flood To Target                         ║\r\n");
-                    Console.Write(" ║ udpplain ║ udpplain 1.1.1.1 5 dport=PORT ║ UDPPLAIN - UDP Flood With Less Options.               ║\r\n");
+                    Red(" ║ udpplain ║ udpplain 1.1.1.1 5 dport=PORT ║ UDPPLAIN - UDP Flood With Less Options.               ║\r\n");
                     Console.Write(" ║ std      ║ std 1.1.1.1 5 dport=PORT      ║ STD - STD Flood To Target                             ║\r\n");
-                    Console.Write(" ║ udp      ║ udp 1.1.1.1 5 dport=PORT      ║ UDP - Basic UDP Flood To Target                       ║\r\n");
+                    Red(" ║ udp      ║ udp 1.1.1.1 5 dport=PORT      ║ UDP - Basic UDP Flood To Target                       ║\r\n");
                     Console.Write(" ║ vse      ║ vse 1.1.1.1 5 dport=PORT      ║ VSE - Valve Source Engine specific Flood To Target    ║\r\n");
-                    Console.Write(" ╠════════╦═════════════════════════════════╩════╦═════════════════════════════════════════╦════════╣\r\n");
+                    Red(" ╠════════╦═════════════════════════════════╩════╦═════════════════════════════════════════╦════════╣\r\n");
                     Console.Write(" ║  Rawr. ║  Example: METHOD IP TIME dport=PORT  ║  Example: udp 66.66.75.107 60 dport=80  ║  Rawr. ║\r\n");
-                    Console.Write(" ╚════════╩══════════════════════════════════════╩═════════════════════════════════════════╩════════╝\r\n");
+                    Red(" ╚════════╩══════════════════════════════════════╩═════════════════════════════════════════╩════════╝\r\n");
                 }
 
                 else if (cmd.Equals("exit", StringComparison.OrdinalIgnoreCase))
@@ -80,11 +94,11 @@ namespace Console_App_Test_1
                 if (cmd.Equals("help", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.Write("\r\n ╔═══════════════════════════════════╗ \r\n");
-                    Console.Write(" ║ tools - Shows Tools               ║ \r\n");
+                    Red(" ║ tools - Shows Tools               ║ \r\n");
                     Console.Write(" ║ attack - Shows Attack Methods     ║ \r\n");
-                    Console.Write(" ║ ports - Shows Helpful ports       ║ \r\n");
+                    Red(" ║ ports - Shows Helpful ports       ║ \r\n");
                     Console.Write(" ║ isp - Shows ISP Vulns             ║ \r\n");
-                    Console.Write(" ╚═══════════════════════════════════╝ \r\n");
+                    Red(" ╚═══════════════════════════════════╝ \r\n");
                 }
 
                 if (cmd.Equals("clear", StringComparison.OrdinalIgnoreCase))
@@ -92,13 +106,13 @@ namespace Console_App_Test_1
                     Console.Clear();
                     Console.Write("\r\n");
                     Console.Write("\r\n");
-                    Console.Write("                     ██╗  ██╗ █████╗ ███╗   ███╗██╗                \r\n");
+                    Red("                     ██╗  ██╗ █████╗ ███╗   ███╗██╗                \r\n");
                     Console.Write("                     ██║ ██╔╝██╔══██╗████╗ ████║██║                \r\n");
-                    Console.Write("                     █████╔╝ ███████║██╔████╔██║██║                \r\n");
+                    Red("                     █████╔╝ ███████║██╔████╔██║██║                \r\n");
                     Console.Write("                     ██╔═██╗ ██╔══██║██║╚██╔╝██║██║                \r\n");
-                    Console.Write("                     ██║  ██╗██║  ██║██║ ╚═╝ ██║██║                \r\n");
+                    Red("                     ██║  ██╗██║  ██║██║ ╚═╝ ██║██║                \r\n");
                     Console.Write("                     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝                \r\n");
-                    Console.Write("                    Type help for a list of commands!            \r\n");
+                    Red("                    Type help for a list of commands!            \r\n");
                     Console.Write("\r\n");
                 }
 
@@ -158,57 +172,57 @@ namespace Console_App_Test_1
                 if (cmd.Equals("tools", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.Write("\r\n ╔═════╦═════════════════╦═══════════════╦═════╗\r\n");
-                    Console.Write(" ║ UwU ║      Tools      ║  By Surtains. ║ UwU ║\r\n");
+                    Red(" ║ UwU ║      Tools      ║  By Surtains. ║ UwU ║\r\n");
                     Console.Write(" ║═════╩═════════════════╬═══════════════╩═════║\r\n");
-                    Console.Write(" ║ ping                  ║ Pings An IPV4       ║\r\n");
+                    Red(" ║ ping                  ║ Pings An IPv4       ║\r\n");
                     Console.Write(" ║ iplookup              ║ IP Lookup           ║\r\n");
-                    Console.Write(" ║ portscan              ║ Portscans IP        ║\r\n");
+                    Red(" ║ portscan              ║ Portscans IP        ║\r\n");
                     Console.Write(" ║ subnetcalc            ║ Calculates A Subnet ║\r\n");
-                    Console.Write(" ╚═══════════════════════╩═════════════════════╝\r\n");
+                    Red(" ╚═══════════════════════╩═════════════════════╝\r\n");
                 }
 
                 if (cmd.Equals("ports", StringComparison.OrdinalIgnoreCase))
                 {
-                    Console.Write("\r\n ╔═══════════════════════════════════╗ \r\n");
-                    Console.Write(" ║ Layer 7 Ports                     ║ \r\n");
-                    Console.Write(" ║ 80 - http sites                   ║ \r\n");
-                    Console.Write(" ║ 443 - https sites                 ║ \r\n");
-                    Console.Write(" ║ 53  - Dns                         ║ \r\n");
-                    Console.Write(" ║ Game Ports                        ║ \r\n");
+                    White("\r\n ╔═══════════════════════════════════╗ \r\n");
+                    Red(" ║ Layer 7 Ports                     ║ \r\n");
+                    Console.Write(" ║ 80 - HTTP Sites                   ║ \r\n");
+                    Red(" ║ 443 - HTTPS Sites                 ║ \r\n");
+                    Console.Write(" ║ 53  - DNS                         ║ \r\n");
+                    Red(" ║ Game Ports                        ║ \r\n");
                     Console.Write(" ║ 3074 - Xbox                       ║ \r\n");
-                    Console.Write(" ║ 9307 - Playstation                ║ \r\n");
+                    Red(" ║ 9307 - Playstation                ║ \r\n");
                     Console.Write(" ║ 25565 - Minecraft                 ║ \r\n");
-                    Console.Write(" ║ 5060 - RTP                        ║ \r\n");
+                    Red(" ║ 5060 - RTP                        ║ \r\n");
                     Console.Write(" ║ VPS / Server Ports                ║ \r\n");
-                    Console.Write(" ║ 22 - ssh                          ║ \r\n");
+                    Red(" ║ 22 - SSH                          ║ \r\n");
                     Console.Write(" ║ 23 - Telnet                       ║ \r\n");
-                    Console.Write(" ║ 21 - Sftp                         ║ \r\n");
-                    Console.Write(" ║ 69 - Tftp                         ║ \r\n");
-                    Console.Write(" ║ 25 - Smtp                         ║ \r\n");
-                    Console.Write(" ║ ISP vulns - Type isp              ║ \r\n");
-                    Console.Write(" ╚═══════════════════════════════════╝ \r\n");
+                    Red(" ║ 21 - SFTP                         ║ \r\n");
+                    Console.Write(" ║ 69 - SFTP                         ║ \r\n");
+                    Red(" ║ 25 - SMTP                         ║ \r\n");
+                    Console.Write(" ║ ISP Vulns - Type isp              ║ \r\n");
+                    White(" ╚═══════════════════════════════════╝ \r\n");
                 }
 
                 if (cmd.Equals("isp", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.Write("\r\n ╔═══════════════════════════════════╗ \r\n");
-                    Console.Write(" ║ UK ISP PORTS                      ║ \r\n");
+                    Red(" ║ UK ISP PORTS                      ║ \r\n");
                     Console.Write(" ║ 19 - Sky                          ║ \r\n");
-                    Console.Write(" ║ 19 - BT                           ║ \r\n");
+                    Red(" ║ 19 - BT                           ║ \r\n");
                     Console.Write(" ║ 111 - Virgin Media                ║ \r\n");
-                    Console.Write(" ║ USA ISP PORTS                     ║ \r\n");
+                    Red(" ║ USA ISP PORTS                     ║ \r\n");
                     Console.Write(" ║ 53 or 19 - AT&T                   ║ \r\n");
-                    Console.Write(" ║ 111 - CenturyLink                 ║ \r\n");
+                    Red(" ║ 111 - CenturyLink                 ║ \r\n");
                     Console.Write(" ║ 19 - Charter                      ║ \r\n");
-                    Console.Write(" ║ 111 or 19 - Comcast Cable         ║ \r\n");
+                    Red(" ║ 111 or 19 - Comcast Cable         ║ \r\n");
                     Console.Write(" ║ 111 - Cox Communications          ║ \r\n");
-                    Console.Write(" ║ 53 or 19 - Spectrum               ║ \r\n");
+                    Red(" ║ 53 or 19 - Spectrum               ║ \r\n");
                     Console.Write(" ║ CANADA ISP PORTS                  ║ \r\n");
-                    Console.Write(" ║ 19 - Bell Aliant                  ║ \r\n");
+                    Red(" ║ 19 - Bell Aliant                  ║ \r\n");
                     Console.Write(" ║ 111 - Bell Canada                 ║ \r\n");
-                    Console.Write(" ║ 111 - Rogers Cable                ║ \r\n");
+                    Red(" ║ 111 - Rogers Cable                ║ \r\n");
                     Console.Write(" ║ 123 - Videotron Ltee              ║ \r\n");
-                    Console.Write(" ╚═══════════════════════════════════╝ \r\n");
+                    Red(" ╚═══════════════════════════════════╝ \r\n");
                 }
 
                 if (cmd.Equals("iplookup", StringComparison.OrdinalIgnoreCase))
